@@ -13120,22 +13120,6 @@ div#notebook {
 </div>
 </div>
 </div>
-
-
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-
-<br>
-Senha Gabarito <input id="numb">
-<button type="button" onclick="javascript:myFunction()">Submit</button>
-</div>
-</div>
-</div>
-
-
-
-
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13145,7 +13129,7 @@ Senha Gabarito <input id="numb">
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">caret</span><span class="p">)</span>
@@ -13158,31 +13142,13 @@ Senha Gabarito <input id="numb">
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Loading required package: parallel
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="n">p</span> <span class="o">&lt;-</span> <span class="s">&quot;C:/Users/01551610/Desktop/Advanced-Predictive-Modelling/GA/GA_Exercise.csv&quot;</span>
+<div class=" highlight hl-r"><pre><span></span><span class="n">p</span> <span class="o">&lt;-</span> <span class="s">&quot;C:/Users/01551610/Desktop/rbarsotti.github.io/GA/GA_Exercise.csv&quot;</span>
 <span class="n">df</span> <span class="o">&lt;-</span> <span class="nf">read.csv</span><span class="p">(</span><span class="n">file</span><span class="o">=</span> <span class="n">p</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s">&quot;;&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -13193,7 +13159,7 @@ Senha Gabarito <input id="numb">
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">head</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -13221,12 +13187,12 @@ Senha Gabarito <input id="numb">
 	<tr><th scope=col>&lt;int&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;fct&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><td>39</td><td> State-gov       </td><td> 77516</td><td> Bachelors</td><td>13</td><td> Never-married     </td><td> Adm-clerical     </td><td> Not-in-family</td><td> White</td><td> Male  </td><td>2174</td><td>0</td><td>40</td><td> United-States</td><td>B</td></tr>
-	<tr><td>50</td><td> Self-emp-not-inc</td><td> 83311</td><td> Bachelors</td><td>13</td><td> Married-civ-spouse</td><td> Exec-managerial  </td><td> Husband      </td><td> White</td><td> Male  </td><td>   0</td><td>0</td><td>13</td><td> United-States</td><td>B</td></tr>
-	<tr><td>38</td><td> Private         </td><td>215646</td><td> HS-grad  </td><td> 9</td><td> Divorced          </td><td> Handlers-cleaners</td><td> Not-in-family</td><td> White</td><td> Male  </td><td>   0</td><td>0</td><td>40</td><td> United-States</td><td>B</td></tr>
-	<tr><td>53</td><td> Private         </td><td>234721</td><td> 11th     </td><td> 7</td><td> Married-civ-spouse</td><td> Handlers-cleaners</td><td> Husband      </td><td> Black</td><td> Male  </td><td>   0</td><td>0</td><td>40</td><td> United-States</td><td>B</td></tr>
-	<tr><td>28</td><td> Private         </td><td>338409</td><td> Bachelors</td><td>13</td><td> Married-civ-spouse</td><td> Prof-specialty   </td><td> Wife         </td><td> Black</td><td> Female</td><td>   0</td><td>0</td><td>40</td><td> Cuba         </td><td>B</td></tr>
-	<tr><td>37</td><td> Private         </td><td>284582</td><td> Masters  </td><td>14</td><td> Married-civ-spouse</td><td> Exec-managerial  </td><td> Wife         </td><td> White</td><td> Female</td><td>   0</td><td>0</td><td>40</td><td> United-States</td><td>B</td></tr>
+	<tr><td>39</td><td> State_gov       </td><td> 77516</td><td> Bachelors</td><td>13</td><td> Never_married     </td><td> Adm_clerical     </td><td> Not_in_family</td><td> White</td><td> Male  </td><td>2174</td><td>0</td><td>40</td><td> United_States</td><td>B</td></tr>
+	<tr><td>50</td><td> Self_emp_not_inc</td><td> 83311</td><td> Bachelors</td><td>13</td><td> Married_civ_spouse</td><td> Exec_managerial  </td><td> Husband      </td><td> White</td><td> Male  </td><td>   0</td><td>0</td><td>13</td><td> United_States</td><td>B</td></tr>
+	<tr><td>38</td><td> Private         </td><td>215646</td><td> HS_grad  </td><td> 9</td><td> Divorced          </td><td> Handlers_cleaners</td><td> Not_in_family</td><td> White</td><td> Male  </td><td>   0</td><td>0</td><td>40</td><td> United_States</td><td>B</td></tr>
+	<tr><td>53</td><td> Private         </td><td>234721</td><td> 11th     </td><td> 7</td><td> Married_civ_spouse</td><td> Handlers_cleaners</td><td> Husband      </td><td> Black</td><td> Male  </td><td>   0</td><td>0</td><td>40</td><td> United_States</td><td>B</td></tr>
+	<tr><td>28</td><td> Private         </td><td>338409</td><td> Bachelors</td><td>13</td><td> Married_civ_spouse</td><td> Prof_specialty   </td><td> Wife         </td><td> Black</td><td> Female</td><td>   0</td><td>0</td><td>40</td><td> Cuba         </td><td>B</td></tr>
+	<tr><td>37</td><td> Private         </td><td>284582</td><td> Masters  </td><td>14</td><td> Married_civ_spouse</td><td> Exec_managerial  </td><td> Wife         </td><td> White</td><td> Female</td><td>   0</td><td>0</td><td>40</td><td> United_States</td><td>B</td></tr>
 </tbody>
 </table>
 
@@ -13240,20 +13206,20 @@ Senha Gabarito <input id="numb">
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">set.seed</span><span class="p">(</span><span class="m">314</span><span class="p">)</span>
 <span class="nf">options</span><span class="p">(</span><span class="n">warn</span><span class="o">=</span><span class="m">-1</span><span class="p">)</span>
 
 <span class="c1"># Particionamentos dos Dados</span>
-<span class="n">trainIndex</span> <span class="o">&lt;-</span> <span class="nf">createDataPartition</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">INCOME</span><span class="p">,</span><span class="n">p</span><span class="o">=</span><span class="m">.7</span><span class="p">,</span><span class="n">list</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span>
+<span class="n">trainIndex</span> <span class="o">&lt;-</span> <span class="nf">createDataPartition</span><span class="p">(</span><span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="o">$</span><span class="n">INCOME</span><span class="p">,</span><span class="n">p</span><span class="o">=</span><span class="m">.7</span><span class="p">,</span><span class="n">list</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span>
 
 <span class="n">trainData</span> <span class="o">&lt;-</span> <span class="n">df[trainIndex</span><span class="p">,</span><span class="n">]</span>
 <span class="n">testData</span> <span class="o">&lt;-</span> <span class="n">df[</span><span class="o">-</span><span class="n">trainIndex</span><span class="p">,</span><span class="n">]</span>
 
-<span class="n">trainX</span> <span class="o">&lt;-</span><span class="n">trainData[</span><span class="p">,</span><span class="m">-1</span><span class="n">]</span>
-<span class="n">testX</span> <span class="o">&lt;-</span> <span class="n">testData[</span><span class="p">,</span><span class="m">-1</span><span class="n">]</span>  
+<span class="n">trainX</span> <span class="o">&lt;-</span><span class="n">trainData[</span><span class="p">,</span><span class="m">-15</span><span class="n">]</span>
+<span class="n">testX</span> <span class="o">&lt;-</span> <span class="n">testData[</span><span class="p">,</span><span class="m">-15</span><span class="n">]</span>  
 <span class="n">y</span><span class="o">=</span><span class="n">trainData</span><span class="o">$</span><span class="n">INCOME</span>
 </pre></div>
 
@@ -13264,17 +13230,21 @@ Senha Gabarito <input id="numb">
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># Modelo Sem Feature Selection</span>
-<span class="n">cv</span> <span class="o">&lt;-</span> <span class="nf">trainControl</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s">&quot;repeatedcv&quot;</span><span class="p">,</span> <span class="n">number</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span> <span class="n">savePredictions</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="n">classProbs</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
+<span class="nf">set.seed</span><span class="p">(</span><span class="m">314</span><span class="p">)</span>
+<span class="n">cv</span> <span class="o">&lt;-</span> <span class="nf">trainControl</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s">&quot;repeatedcv&quot;</span><span class="p">,</span> <span class="n">number</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span> <span class="n">savePredictions</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
+                  <span class="n">summaryFunction</span><span class="o">=</span><span class="n">twoClassSummary</span><span class="p">,</span> <span class="n">classProbs</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
 
-<span class="n">model_5.0</span> <span class="o">&lt;-</span> <span class="nf">train</span><span class="p">(</span><span class="n">INCOME</span><span class="o">~</span><span class="n">. </span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">trainData</span><span class="p">,</span> <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;C5.0Tree&quot;</span><span class="p">,</span><span class="n">trControl</span> <span class="o">=</span> <span class="n">cv</span><span class="p">,</span> <span class="n">na.action</span><span class="o">=</span><span class="n">na.exclude</span><span class="p">)</span>
+
+<span class="n">model</span> <span class="o">&lt;-</span> <span class="nf">train</span><span class="p">(</span><span class="n">INCOME</span><span class="o">~</span><span class="n">.,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">trainData</span><span class="p">,</span> <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;glm&quot;</span><span class="p">,</span> 
+                   <span class="n">metric</span><span class="o">=</span><span class="s">&quot;ROC&quot;</span><span class="p">,</span><span class="n">trControl</span> <span class="o">=</span> <span class="n">cv</span><span class="p">,</span> <span class="n">control</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">maxit</span> <span class="o">=</span> <span class="m">50</span><span class="p">))</span>
 
 
-<span class="n">pred_5.0</span> <span class="o">&lt;-</span> <span class="nf">predict</span><span class="p">(</span><span class="n">model_5.0</span> <span class="p">,</span><span class="n">newdata</span><span class="o">=</span><span class="n">testData</span><span class="p">)</span>
-<span class="nf">confusionMatrix</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">pred_5.0</span><span class="p">,</span> <span class="n">testData</span><span class="o">$</span><span class="n">INCOME</span><span class="p">)</span>
+<span class="n">pred</span> <span class="o">&lt;-</span> <span class="nf">predict</span><span class="p">(</span><span class="n">model</span> <span class="p">,</span><span class="n">newdata</span><span class="o">=</span><span class="n">testData</span><span class="p">)</span>
+<span class="nf">confusionMatrix</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">pred</span><span class="p">,</span> <span class="n">testData</span><span class="o">$</span><span class="n">INCOME</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13297,29 +13267,29 @@ Senha Gabarito <input id="numb">
 
           Reference
 Prediction   A   B
-         A  23   7
-         B  26 158
-                                          
-               Accuracy : 0.8458          
-                 95% CI : (0.7903, 0.8914)
-    No Information Rate : 0.771           
-    P-Value [Acc &gt; NIR] : 0.004439        
-                                          
-                  Kappa : 0.4943          
-                                          
- Mcnemar&#39;s Test P-Value : 0.001728        
-                                          
-            Sensitivity : 0.4694          
-            Specificity : 0.9576          
-         Pos Pred Value : 0.7667          
-         Neg Pred Value : 0.8587          
-             Prevalence : 0.2290          
-         Detection Rate : 0.1075          
-   Detection Prevalence : 0.1402          
-      Balanced Accuracy : 0.7135          
-                                          
-       &#39;Positive&#39; Class : A               
-                                          </pre>
+         A  27  18
+         B  22 147
+                                         
+               Accuracy : 0.8131         
+                 95% CI : (0.7543, 0.863)
+    No Information Rate : 0.771          
+    P-Value [Acc &gt; NIR] : 0.08105        
+                                         
+                  Kappa : 0.455          
+                                         
+ Mcnemar&#39;s Test P-Value : 0.63526        
+                                         
+            Sensitivity : 0.5510         
+            Specificity : 0.8909         
+         Pos Pred Value : 0.6000         
+         Neg Pred Value : 0.8698         
+             Prevalence : 0.2290         
+         Detection Rate : 0.1262         
+   Detection Prevalence : 0.2103         
+      Balanced Accuracy : 0.7210         
+                                         
+       &#39;Positive&#39; Class : A              
+                                         </pre>
 </div>
 
 </div>
@@ -13330,24 +13300,25 @@ Prediction   A   B
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">registerDoParallel</span><span class="p">(</span><span class="m">4</span><span class="p">)</span> 
 <span class="nf">getDoParWorkers</span><span class="p">()</span> 
 
-
+<span class="nf">set.seed</span><span class="p">(</span><span class="m">314</span><span class="p">)</span>
 <span class="n">ctrl</span> <span class="o">&lt;-</span> <span class="nf">gafsControl</span><span class="p">(</span><span class="n">functions</span> <span class="o">=</span> <span class="n">caretGA</span><span class="p">,</span>
-                    <span class="n">method</span><span class="o">=</span><span class="s">&quot;cv&quot;</span><span class="p">,</span>
                     <span class="n">genParallel</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span>
-                    <span class="n">allowParallel</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
+                    <span class="n">allowParallel</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span>
+                    <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;cv&quot;</span><span class="p">)</span>
 
-<span class="n">obj</span> <span class="o">&lt;-</span> <span class="nf">gafs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">trainX</span><span class="p">,</span>
-            <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">,</span>
+                     
+<span class="n">obj</span> <span class="o">&lt;-</span> <span class="nf">gafs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">trainData[</span><span class="p">,</span><span class="m">-15</span><span class="n">]</span><span class="p">,</span>
+            <span class="n">y</span> <span class="o">=</span> <span class="n">trainData</span><span class="o">$</span><span class="n">INCOME</span><span class="p">,</span>
             <span class="n">iters</span> <span class="o">=</span> <span class="m">2</span><span class="p">,</span>
             <span class="n">popSize</span> <span class="o">=</span> <span class="m">2</span><span class="p">,</span>
-            <span class="n">gafsControl</span> <span class="o">=</span> <span class="n">ctrl</span><span class="p">,</span>            
-            <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;C5.0Tree&quot;</span><span class="p">)</span>
+            <span class="n">gafsControl</span> <span class="o">=</span> <span class="n">ctrl</span><span class="p">,</span>
+            <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;rf&quot;</span><span class="p">)</span>
 
 <span class="n">obj</span>
 </pre></div>
@@ -13402,16 +13373,16 @@ External resampling method: Cross-Validated (10 fold)
 
 During resampling:
   * the top 5 selected variables (out of a possible 14):
-    FNLWGT (100%), COUNTRY (90%), HOURS_PER_WEEK (90%), INCOME (90%), SEX (90%)
-  * on average, 11.5 variables were selected (min = 8, max = 13)
+    AGE (100%), CAPITAL_GAIN (100%), COUNTRY (100%), EDU_NUM (100%), EDUCATION (100%)
+  * on average, 12.8 variables were selected (min = 11, max = 14)
 
 In the final search using the entire training set:
-   * 14 features selected at iteration 1 including:
-     WORKCLASS, FNLWGT, EDUCATION, EDU_NUM, MARITAL_STATUS ... 
+   * 10 features selected at iteration 1 including:
+     AGE, WORKCLASS, FNLWGT, EDUCATION, EDU_NUM ... 
    * external performance at this iteration is
 
    Accuracy       Kappa 
-     0.9843      0.9433 
+     0.8356      0.4733 
 </pre>
 </div>
 
@@ -13430,7 +13401,7 @@ In the final search using the entire training set:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">final</span> <span class="o">&lt;-</span> <span class="n">obj</span><span class="o">$</span><span class="n">ga</span><span class="o">$</span><span class="n">final</span>
@@ -13453,20 +13424,16 @@ In the final search using the entire training set:
 
 <div class="output_html rendered_html output_subarea ">
 <ol class=list-inline>
+	<li>'AGE'</li>
 	<li>'WORKCLASS'</li>
 	<li>'FNLWGT'</li>
 	<li>'EDUCATION'</li>
 	<li>'EDU_NUM'</li>
-	<li>'MARITAL_STATUS'</li>
 	<li>'OCCUPATION'</li>
-	<li>'RELATIONSHIP'</li>
-	<li>'RACE'</li>
 	<li>'SEX'</li>
 	<li>'CAPITAL_GAIN'</li>
 	<li>'CAPITAL_LOSS'</li>
 	<li>'HOURS_PER_WEEK'</li>
-	<li>'COUNTRY'</li>
-	<li>'INCOME'</li>
 </ol>
 
 </div>
@@ -13479,7 +13446,7 @@ In the final search using the entire training set:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">colnames</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -13535,36 +13502,11 @@ In the final search using the entire training set:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="n">df_ga</span> <span class="o">&lt;-</span> <span class="n">df[</span><span class="p">,</span><span class="n">final]</span>
-<span class="n">df_ga</span><span class="o">$</span><span class="n">INCOME</span> <span class="o">&lt;-</span> <span class="n">df</span><span class="o">$</span><span class="n">INCOME</span>
-
-<span class="n">trainIndex</span> <span class="o">&lt;-</span> <span class="nf">createDataPartition</span><span class="p">(</span><span class="n">df_ga</span><span class="o">$</span><span class="n">INCOME</span><span class="p">,</span><span class="n">p</span><span class="o">=</span><span class="m">.7</span><span class="p">,</span><span class="n">list</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span>
-
-<span class="n">trainData</span> <span class="o">&lt;-</span> <span class="n">df_ga[trainIndex</span><span class="p">,</span><span class="n">]</span>
-<span class="n">testData</span> <span class="o">&lt;-</span> <span class="n">df_ga[</span><span class="o">-</span><span class="n">trainIndex</span><span class="p">,</span><span class="n">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="c1"># Modelo Com Features Selecionadas</span>
-<span class="n">cv</span> <span class="o">&lt;-</span> <span class="nf">trainControl</span><span class="p">(</span><span class="n">method</span> <span class="o">=</span> <span class="s">&quot;repeatedcv&quot;</span><span class="p">,</span> <span class="n">number</span> <span class="o">=</span> <span class="m">10</span><span class="p">,</span> <span class="n">savePredictions</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="n">classProbs</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">)</span>
-
-<span class="n">model_5.0</span> <span class="o">&lt;-</span> <span class="nf">train</span><span class="p">(</span><span class="n">INCOME</span><span class="o">~</span><span class="n">. </span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">df_ga</span><span class="p">,</span> <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;C5.0Tree&quot;</span><span class="p">,</span><span class="n">trControl</span> <span class="o">=</span> <span class="n">cv</span><span class="p">,</span> <span class="n">na.action</span><span class="o">=</span><span class="n">na.exclude</span><span class="p">)</span>
-
-
-<span class="n">pred_5.0</span> <span class="o">&lt;-</span> <span class="nf">predict</span><span class="p">(</span><span class="n">model_5.0</span> <span class="p">,</span><span class="n">newdata</span><span class="o">=</span><span class="n">testData</span><span class="p">)</span>
-<span class="nf">confusionMatrix</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">pred_5.0</span><span class="p">,</span> <span class="n">testData</span><span class="o">$</span><span class="n">INCOME</span><span class="p">)</span>
+<div class=" highlight hl-r"><pre><span></span><span class="n">pred</span> <span class="o">&lt;-</span> <span class="nf">predict</span><span class="p">(</span><span class="n">obj</span><span class="o">$</span><span class="n">fit</span> <span class="p">,</span><span class="n">newdata</span><span class="o">=</span><span class="n">testData</span><span class="p">)</span>
+<span class="nf">confusionMatrix</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">pred</span><span class="p">,</span> <span class="n">testData</span><span class="o">$</span><span class="n">INCOME</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13587,26 +13529,26 @@ In the final search using the entire training set:
 
           Reference
 Prediction   A   B
-         A  34   4
-         B  15 161
+         A  14   7
+         B  35 158
                                           
-               Accuracy : 0.9112          
-                 95% CI : (0.8648, 0.9457)
+               Accuracy : 0.8037          
+                 95% CI : (0.7441, 0.8547)
     No Information Rate : 0.771           
-    P-Value [Acc &gt; NIR] : 6.547e-08       
+    P-Value [Acc &gt; NIR] : 0.1446          
                                           
-                  Kappa : 0.727           
+                  Kappa : 0.3044          
                                           
- Mcnemar&#39;s Test P-Value : 0.02178         
+ Mcnemar&#39;s Test P-Value : 3.097e-05       
                                           
-            Sensitivity : 0.6939          
-            Specificity : 0.9758          
-         Pos Pred Value : 0.8947          
-         Neg Pred Value : 0.9148          
-             Prevalence : 0.2290          
-         Detection Rate : 0.1589          
-   Detection Prevalence : 0.1776          
-      Balanced Accuracy : 0.8348          
+            Sensitivity : 0.28571         
+            Specificity : 0.95758         
+         Pos Pred Value : 0.66667         
+         Neg Pred Value : 0.81865         
+             Prevalence : 0.22897         
+         Detection Rate : 0.06542         
+   Detection Prevalence : 0.09813         
+      Balanced Accuracy : 0.62165         
                                           
        &#39;Positive&#39; Class : A               
                                           </pre>
@@ -13621,7 +13563,7 @@ Prediction   A   B
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Desafio)-Utilizando-a-base-do-exerc&#237;cio-de-Regress&#227;o-Linear,-considere-na-&#250;ltima-etapa-do-algoritmo-gen&#233;tico-os-seguintes-vetores-de-genes:">Desafio) Utilizando a base do exerc&#237;cio de Regress&#227;o Linear, considere na &#250;ltima etapa do algoritmo gen&#233;tico os seguintes vetores de genes e determine o que tem maior 'fit':<a class="anchor-link" href="#Desafio)-Utilizando-a-base-do-exerc&#237;cio-de-Regress&#227;o-Linear,-considere-na-&#250;ltima-etapa-do-algoritmo-gen&#233;tico-os-seguintes-vetores-de-genes:">&#182;</a></h4>
+<h4 id="Desafio)-Utilizando-a-base-do-exerc&#237;cio-de-Regress&#227;o-Linear,-considere-na-&#250;ltima-etapa-do-algoritmo-gen&#233;tico-os-seguintes-vetores-de-genes:">Desafio) Utilizando a base do exerc&#237;cio de Regress&#227;o Linear, considere na &#250;ltima etapa do algoritmo gen&#233;tico os seguintes vetores de genes:<a class="anchor-link" href="#Desafio)-Utilizando-a-base-do-exerc&#237;cio-de-Regress&#227;o-Linear,-considere-na-&#250;ltima-etapa-do-algoritmo-gen&#233;tico-os-seguintes-vetores-de-genes:">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -13634,7 +13576,7 @@ Prediction   A   B
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">p_2</span> <span class="o">&lt;-</span> <span class="s">&quot;C:/Users/01551610/Desktop/Advanced-Predictive-Modelling/Linear Regression/BostonRealEstate_Exercise.csv&quot;</span>
@@ -13648,7 +13590,7 @@ Prediction   A   B
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="nf">head</span><span class="p">(</span><span class="n">df_2</span><span class="p">)</span>
@@ -13695,7 +13637,7 @@ Prediction   A   B
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># Divisão Treino &amp; Teste</span>
@@ -13728,7 +13670,7 @@ Prediction   A   B
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">model_1</span>
@@ -13774,7 +13716,7 @@ Tuning parameter &#39;intercept&#39; was held constant at a value of TRUE</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="n">model_2</span>
@@ -13820,22 +13762,6 @@ Tuning parameter &#39;intercept&#39; was held constant at a value of TRUE</pre>
 </div>
     </div>
   </div>
-
-
-<script type="text/javascript">
-  $( document ).ready($('div.input').hide())
-  $( document ).ready($('div.output').hide())
-
-  function myFunction(){
-    var x;
-    x = document.getElementById("numb").value;
-    if (x == "33") {
-      $( document ).ready($('div.input').show())
-      $( document ).ready($('div.output').show())
-    }
-  }
-</script>
-
 </body>
 
  

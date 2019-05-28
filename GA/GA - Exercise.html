@@ -13120,10 +13120,25 @@ div#notebook {
 </div>
 </div>
 </div>
+
+
+
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="1)-Treine-uma-&#225;rvore-de-decis&#227;o-C5.0-sem-feature-selection-e-uma-com-feature-selection-e-compare-suas-matrizes-de-confus&#227;o-OBS)-Utilize-o-seed(314),-population(2)-e-iter(2)-para-todas-as-quest&#245;es">1) Treine uma &#225;rvore de decis&#227;o C5.0 sem feature selection e uma com feature selection e compare suas matrizes de confus&#227;o OBS) Utilize o seed(314), population(2) e iter(2) para todas as quest&#245;es<a class="anchor-link" href="#1)-Treine-uma-&#225;rvore-de-decis&#227;o-C5.0-sem-feature-selection-e-uma-com-feature-selection-e-compare-suas-matrizes-de-confus&#227;o-OBS)-Utilize-o-seed(314),-population(2)-e-iter(2)-para-todas-as-quest&#245;es">&#182;</a></h4>
+
+<br>
+Senha Gabarito <input id="numb">
+<button type="button" onclick="javascript:myFunction()">Submit</button>
+</div>
+</div>
+</div>
+
+
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="1)-Treine-uma-&#225;rvore-de-decis&#227;o-Random-Forest-sem-feature-selection-e-uma-com-feature-selection-e-compare-suas-matrizes-de-confus&#227;o-OBS)-Utilize-o-seed(314),-population(2)-e-iter(2)-para-todas-as-quest&#245;es">1) Treine uma &#225;rvore de decis&#227;o Random Forest sem feature selection e uma com feature selection e compare suas matrizes de confus&#227;o OBS) Utilize o seed(314), population(2) e iter(2) para todas as quest&#245;es<a class="anchor-link" href="#1)-Treine-uma-&#225;rvore-de-decis&#227;o-Random-Forest-sem-feature-selection-e-uma-com-feature-selection-e-compare-suas-matrizes-de-confus&#227;o-OBS)-Utilize-o-seed(314),-population(2)-e-iter(2)-para-todas-as-quest&#245;es">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -13762,6 +13777,22 @@ Tuning parameter &#39;intercept&#39; was held constant at a value of TRUE</pre>
 </div>
     </div>
   </div>
+
+
+  <script type="text/javascript">
+  $( document ).ready($('div.input').hide())
+  $( document ).ready($('div.output').hide())
+
+  function myFunction(){
+    var x;
+    x = document.getElementById("numb").value;
+    if (x == "33") {
+      $( document ).ready($('div.input').show())
+      $( document ).ready($('div.output').show())
+    }
+  }
+</script>
+
 </body>
 
  
